@@ -1,0 +1,214 @@
+<html>
+    <head>
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://kit.fontawesome.com/984e4357af.js" crossorigin="anonymous"></script>
+
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <h1 class="logo"><span style="color:rgb(255, 3, 175);">MY </span>Portfolio</h1>
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class=" oo fa-solid fa-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="oo fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <p> Full-stack developer</p>
+                    <h1>Hi, I'm <span>Nithi Manivannan</span><br>From Chennai</h1>
+                </div>
+
+            </div>
+        <!-------------about------------>
+        </div>
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="NithiProfilePicture.jpg">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>Hi, I am a Full-stack developer who is currently leveraging my skills to build  dynamic websites that showcases full-stack expertise.
+                        </p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>WEB DEVELOPMENT</span><br><br>HTML / CSS / BOOTSTRAP / JS / REACT</li><br>
+                                <li><span>PYTHON</span><br><br>150+ Hours of problem solving in Python</li><br>
+                                <li><span>SQL</span><br><br>50+ Hours of Querying in SQL and ER Model</li><br>
+                                <li><span>POWER BI</span><br><br>Data Analytics, Data Modelling and Building Data visualization</li><br>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>January 2023 - June 2023</span><br><br>Internship at Kaar Technologies <br><br>Learned Angular
+                                and did a full-stack project using Angular, Python and Power BI</li><br>
+                                
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2020 - 2024</span><br><br>BE(ECE)<br>Sona College Of Technology</li><br>
+                                <li><span>2020</span><br><br>HSC<br>Alagappa Matriculation Higher Secondary School</li><br>
+                                <li><span>2018</span><br><br>SSLC<br>Alagappa Matriculation Higher Secondary School</li><br>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!----------serices-------->
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">My Services</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Web Design</h2>
+                        <p>I create visually stunning and user-friendly websites tailored to your unique needs.</p>
+                      
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-react"></i>
+                        <h2>Web Development</h2>
+                        <p>Elevate your brand with a single page application for your brand that showcases your products and services</p>
+                     
+                    </div>
+                    <div>
+                        <i class=" fas fa-chart-line"></i>
+                        <h2>Power BI</h2>
+                        <p>Easily visualize your business analytics and gear up your business performance using Power BI</p>
+                      
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!--------project----------->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Projects</h1>
+                <div class="work-list">                   
+                    <div class="work">
+                        <img src="library.avif">
+                        <div class="layer">
+                            <h3>Library Management System</h3>
+                            <p>Explore my Library Management system Angular web app where you can search sort and filter based on Author , book and year</p>
+                            <button onclick="openProject()" role="button" class="button-demo">Live Demo</button>
+                            
+                           
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="netflix.jpg">
+                        <div class="layer">
+                            <h3>Netflix Landing Page</h3>
+                            <p>Step into innovation with my captivating landing page project.Here i recreated Responsive Netflix landing page with flexbox utilities</p>
+                         
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="calci.png">
+                        <div class="layer">
+                            <h3>Calculator</h3>
+                            <p>Experience efficiency with my Grid-based calculator project. Seamlessly designed for intuitive functionality, it offers a user-friendly interface for quick and precise calculations.</p>
+                            
+                        </div>
+                    </div>
+                </div>
+               
+
+            </div>
+        </div>
+        <!-----------contact-------------->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-paper-plane"></i>nithi2002manivannan@gmail.com</p>
+                        <p><i class="fa-solid fa-square-phone"></i> 7339272627</p>
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/nithi-manivannan-385136234/"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://github.com/NithiManivannan"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                        <a href="NithiManivannanResume.pdf" download class="btn btn2">Download Resume</a>
+                    </div>
+                    <div class="contact-right">
+                    <form name='submit-to-google-sheet'>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Mail" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright © Nithi Manivannan 2024 | All rights reserved. </p>
+
+            </div>
+        </div>
+        <script>
+            var tablinks=document.getElementsByClassName("tab-links");
+            var tabcontents=document.getElementsByClassName("tab-contents");
+
+            function opentab(tagname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tagname).classList.add("active-tab");
+            }
+
+        </script>
+        <script>
+            var sidemenu=document.getElementById("sidemenu");
+            function openmenu(){
+                sidemenu.style.right="0";
+            }
+            function closemenu(){
+                sidemenu.style.right="-200px";
+            }
+        </script>
+        <script>
+            
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbwqjJIA_Uj126DLGX8NPidTzt80bYv8NFm17p7wiuFOD5UIqjlUpoTLvRFWqzHDMzVK1Q/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const msg = document.getElementById("msg")
+            function openProject(){
+                window.location.href = "https://nithimanivannan.github.io/LibraryManagementSystem/";
+            }
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.innerHTML="Your response has been submited."
+                    setTimeout(function(){
+                        msg.innerHtml=""
+                    },5000)
+                    form.reset()
+
+                })
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
+    </body>
+</html>
